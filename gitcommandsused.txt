@@ -13,6 +13,7 @@
 6- to commit the new file to your local repository, you need to first tell git who you are: 
 git config --global user.email "my_email"
 git config --global user.name "my_name"
+>> git add -A
 7- git commit -m "message to commit"
 8- to merge to the main branch
 >> git checkout main : to ensure you're on the main branch
@@ -21,3 +22,5 @@ git config --global user.name "my_name"
 >> git checkout main: to ensure that we're still on the main branch
 >> git branch -d name_branch : to delete our created branch
 >> git push origin main
+>>git push --set-upstream origin branch_name: to push the changes you made above in the lab environmentor your local system IDE
+to the branch_name branch in your Github repository, which is tracked as the upstream branch
