@@ -1,0 +1,23 @@
+#Let's export the copied URL in an environment variable so it's 
+#available for us to use in the later steps, run the following command in terminal:
+
+# A utiliser généralement dans un environnement linux
+#1- export ORIGIN=<your repository HTTPS URL>
+#2- git clone $ORIGIN
+#3- git checkout -b branch_name: to create a new branch and switch to it
+#4- git status: to see the current changes on your working directory
+#5- git diff path_to_the_changed_file to see the made chnages
+#6- git add . : to add all untracked files in the current directory and subdirectories to the staging area
+# you can also use git add file_name: to add a single file you created to the staging area and finally
+#git add -A: to recursively add all filses from the top levels git folder
+6- to commit the new file to your local repository, you need to first tell git who you are: 
+git config --global user.email "my_email"
+git config --global user.name "my_name"
+7- git commit -m "message to commit"
+8- to merge to the main branch
+>> git checkout main : to ensure you're on the main branch
+>> git merge name_of_created_branch
+>>git log : to confirm the change was merged
+>> git checkout main: to ensure that we're still on the main branch
+>> git branch -d name_branch : to delete our created branch
+>> git push origin main
